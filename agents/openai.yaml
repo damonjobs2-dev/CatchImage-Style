@@ -1,0 +1,4 @@
+interface:
+  display_name: "CatchArt Image Style"
+  short_description: "提取图片风格与可复用 style.md，再按同一视觉语言批量重新设计图片"
+  default_prompt: "使用 $catchart-image-style 提取这张参考图的风格并保存 style.md；如果我同时要求重新设计其他图片，将它们按同一风格逐张生成并交付。"
