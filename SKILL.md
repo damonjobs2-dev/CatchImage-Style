@@ -1,11 +1,11 @@
 ---
-name: catchart-image-style
+name: catchimage-style
 description: 提取参考图片的视觉风格并交付可复用的 style.md；用户要求时，以该风格批量重新包装和设计其他图片，保留各图主体并统一视觉语言。
 metadata:
-  version: "1.2.0"
+  version: "1.2.1"
 ---
 
-# CatchArt Image Style
+# CatchImage-Style
 
 分析“怎样呈现”以及这些选择怎样形成视觉效果。画面主体只作定位背景；不把海盗、猫、人物等内容标签当作风格。
 

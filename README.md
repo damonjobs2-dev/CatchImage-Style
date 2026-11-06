@@ -1,10 +1,10 @@
-# CatchArt Image Style
+# CatchImage-Style
 
 **Extract one image’s style. Redesign a whole set around it.**
 
-[English](#how-it-works) · [简体中文](#中文) · **v1.2.0**
+[English](#how-it-works) · [简体中文](#中文) · **v1.2.1**
 
-`catchart-image-style` turns a visual reference into a portable `style.md`, then helps your agent use that direction to redesign other images. Keep each subject’s defining features while bringing the whole set into one visual language.
+`catchimage-style` turns a visual reference into a portable `style.md`, then helps your agent use that direction to redesign other images. Keep each subject’s defining features while bringing the whole set into one visual language.
 
 ## Style reference
 
@@ -37,15 +37,17 @@ The skill uses your agent’s vision and image-generation tools. No CatchArt acc
 ## Use it
 
 ```bash
-git clone https://github.com/damonjobs2-dev/catchart-image-style.git ~/.codex/skills/catchart-image-style
+git clone https://github.com/damonjobs2-dev/CatchImage-Style.git ~/.codex/skills/catchimage-style
 ```
+
+Renamed from `catchart-image-style` in v1.2.1. Existing users should back up and replace the old installation folder with `catchimage-style` to avoid duplicate entries.
 
 If the directory already exists, update or back it up first. Other agents can read [SKILL.md](SKILL.md) using their own skill-installation convention.
 
 Attach your images and ask:
 
 ```text
-Use $catchart-image-style. Image 1 is the style reference.
+Use $catchimage-style. Image 1 is the style reference.
 Redesign the remaining images as a consistent set of website heroes.
 Keep each subject’s defining features. Colors may adapt to the subject.
 Leave space for copy and do not render text.
@@ -65,14 +67,14 @@ python3 -B -m unittest discover -s tests -v
 
 **提取一张图的风格，再把一组图片重新设计成同一套视觉。**
 
-`catchart-image-style` 会拆解参考图的配色、光影、构图、材质与关键特征，整理成可复用的 `style.md`，再将这套规则应用到其他图片。保留各自人物与辨识点，颜色可以调整，整体视觉保持一致。
+`catchimage-style` 会拆解参考图的配色、光影、构图、材质与关键特征，整理成可复用的 `style.md`，再将这套规则应用到其他图片。保留各自人物与辨识点，颜色可以调整，整体视觉保持一致。
 
 上方保留一张原始风格参考；四张案例各自合并了原图与实际生成图，展示照片、插画人物和非人形角色的重新设计效果。
 
 附图后直接说明需求：
 
 ```text
-使用 $catchart-image-style。第一张是风格参考，其他是待处理图片。
+使用 $catchimage-style。第一张是风格参考，其他是待处理图片。
 统一做成横版网页首页宣传图，保留各自人物和关键配件。
 颜色可根据人物调整，左侧留出文案空间，图内不生成文字。
 ```
